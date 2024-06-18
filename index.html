@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,44 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Taler Explorer</title>
   <link rel="stylesheet" href="./public/css/style.css">
-  <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
 </head>
 <body>
 
 <main class="main flex">
-  <div class="container flex-1 flex-shrink-0 flex-auto">
-    <div class="flex flex-col items-center justify-center h-full md:gap-20 gap-10 py-6">
-      <div class="logo logo--video">
-        <video
-          width="142" height="142"
-          loop
-          muted
-          autoplay
-          poster="./public/img/logo.png"
-        >
-          <source src="./public/videos/Final.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <div class="search-bar">
-        <div class="h1 mb-5">Address / Block number or hash / Extrinsic number or hash</div>
-        <div class="search-bar__field mb-5">
-          <div class="search-bar__input-wrap">
-            <input type="text" placeholder="The input field" class="search-bar__input">
-          </div>
-          <div class="search-bar__actions">
-            <div class="search-bar__delete"></div>
-            <button class="search-bar__submit">
-              <span>Search</span>
-              <canvas id="canvas" class="js-button-anim" width="100%" height="100%"></canvas>
-            </button>
-          </div>
-        </div>
-        <div class="text-center">
-          <p class="h2 inline-block mb-2">Explorer</p>
-          <p>Please enter your request!</p>
-        </div>
+  <div class="container">
+    <h2 class="mb-[20px] py-[10px] border-b-2 border-gray400">Pages</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <ul style="list-style: none;font-size: 20px;">
+          <li><a class="d-block text-lg" href="home.html">Home</a></li>
+          <li><a class="d-block text-lg" href="search-results.html">Search results</a></li>
+          <li><a class="d-block text-lg" href="block.html">Block</a></li>
+          <li><a class="d-block text-lg" href="event.html">Event</a></li>
+          <li><a class="d-block text-lg" href="extrinsic.html">Extrinsic</a></li>
+          <li><a class="d-block text-lg" href="loading.html">Loading</a></li>
+        </ul>
       </div>
     </div>
   </div>
