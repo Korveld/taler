@@ -66,7 +66,7 @@ jQuery(function ($) {
     }, 300);
   })
 
-  if ($('.js-button-anim').length) {
+  /*if ($('.js-button-anim').length) {
     $('.js-button-anim').each(function () {
       let layout = new rive.Layout({
         fit: rive.Fit.Cover,
@@ -78,12 +78,12 @@ jQuery(function ($) {
         canvas: $(this)[0],
         layout: layout,
         autoplay: true,
-        /*onLoad: () => {
+        /!*onLoad: () => {
           r.resizeDrawingSurfaceToCanvas();
-        },*/
+        },*!/
       });
     });
-  }
+  }*/
   
 });
 
